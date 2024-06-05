@@ -1,0 +1,60 @@
+body {
+  background-color: #83dbdb;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  .each_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(1vw + 30px);
+    padding: 3vw;
+    .flex {
+      width: 50%;
+      text-align: center;
+    }
+  }
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .time {
+    margin: 0 10px;
+    text-align: center;
+    background-color: white;
+    padding: 0.3vw;
+    border-radius: 5px;
+    width: 80px;
+  }
+
+  .time h2 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+
+  .time small {
+    font-size: 14px;
+    color: #0c0c0c;
+  }
+  .image {
+    width: 30rem;
+    max-width: 95%;
+    border-radius: 0.5vw;
+  }
+
+  @media screen and (max-width: 920px) {
+    .each_position {
+      flex-direction: column;
+      .flex {
+        min-width: 250px;
+        width: 80%;
+        padding: 2vw;
+      }
+    }
+  }
+}
